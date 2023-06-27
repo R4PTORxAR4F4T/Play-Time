@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container{
+    @apply mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl
+  }
+
+.my-custom-btn{
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white
+}
+
+.navbar a {
+    background-color: transparent;
+}
+.drawer-side a {
+    background-color: transparent;
+}
+
+.input {
+    height: 2.5em;
+}
+
+.navbar a.active {
+    color: black;
+    font-weight: bold;
+}
+
+.drawer-side a.active {
+    font-weight: bold;
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white
+}
+
+/* For dark mode */
+.dark-mode a.active {
+    color: white;
+    font-weight: bold;
+}
+
+.single-line-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
